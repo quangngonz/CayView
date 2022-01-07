@@ -28,6 +28,4 @@ def get_html():
         currentTime = time.time()  
         print("Time: " + str(currentTime - previousTime), end="\n\n")
 
-for i in range(10):
-    t = Thread(target=get_html)
-    t.start()
+get_html()
